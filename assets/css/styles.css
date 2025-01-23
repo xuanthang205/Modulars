@@ -20,6 +20,35 @@ img {
     vertical-align: bottom;
 }
 
+.section-title {
+    position: relative;
+    padding-left: 46px;
+    color: #152427;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.13;
+}
+
+.section-title::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #152427;
+}
+
+.section-heading {
+    position: relative;
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
 .container {
     max-width: calc(100% - 48px);
     width: 1140px;
@@ -252,3 +281,118 @@ img {
 .logos__icon:hover {
     transform: scale(1.1);
 }
+
+/* ===== Service ====== */
+.service {
+    padding: 64px 0;
+}
+
+.service__heading {
+    width: 520px;
+    margin-top: 12px;
+}
+
+.service__heading::after {
+    position: absolute;
+    right: 103px;
+    bottom: 19px;
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: #152427;
+}
+
+.service__container {
+    position: relative;
+}
+
+.service__list {
+    margin-top: 76px;
+    display: flex;
+}
+
+.service__item {
+    width: calc((100% - 32px) / 3);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #fff;
+}
+
+.service__item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service__item figure {
+    overflow: hidden;
+    height: 318px;
+}
+
+.service__item:hover .service__item-thumb {
+    transform: scale(1.1);
+}
+
+.service__item-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 34% 0;
+    transition: 0.25s;
+}
+
+.service__item-body {
+    padding: 24px 18px;
+}
+
+.service__item-heading {
+    color: #152427;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service__item-desc {
+    margin-top: 18px;
+    max-width: 267px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
+}
+
+.service__control {
+    position: absolute;
+    right: 73px;
+    top: -139px;
+    display: flex;
+    column-gap: 17px;
+}
+
+.service__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;border-radius: 50%;
+    color: #152427;
+    outline: none;
+    border: none;
+    background-color: #E2EDDF;
+    transition: 0.25s;
+}
+
+.service__btn-next {
+    rotate: 180deg;
+}
+
+.service__btn:hover {
+    cursor: pointer;
+    color:#fff;
+    background-color: #143C3C;
+}
+
+.service .container {
+    overflow: hidden;
+}
+
