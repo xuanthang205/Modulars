@@ -230,3 +230,25 @@ img {
     right: 9px;
     bottom: -36px;
 }
+
+/* ===== Logos ====== */
+.logos {
+    padding: 42px 0;
+}
+
+.logos__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 121px;
+    border-radius: 100.5px;
+    background: #e2eddf;
+}
+
+.logos__icon {
+    transition: 0.25s;
+}
+
+.logos__icon:hover {
+    transform: scale(1.1);
+}
